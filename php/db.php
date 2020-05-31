@@ -4,12 +4,12 @@
 
 // Createdb - Подключение к базе данных $dbname
 function Createdb(){
-    $servername = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "employee";
+    $servername = "localhost"; // Может быть другим
+    $username = "root"; // Может быть другим
+    $password = "root"; // Может быть другим
+    $dbname = "employee"; // Может быть другим
 
-    // Запрос на подлючение к базу данных в переменную $con
+    // Запрос на подлючение к базе данных в переменную $con
     $con = mysqli_connect($servername, $username, $password);
 
     // Если не удалось подключиться к базе данных
@@ -26,7 +26,7 @@ function Createdb(){
     if (mysqli_query($con, $sql)) {
         $con = mysqli_connect($servername, $username, $password, $dbname);
 
-        // Запрос SQL - Создание таблицы employees_list
+        // Запрос SQL - Создание таблицы employees_list (может быть другое название)
         $sql = "
                 CREATE TABLE IF NOT EXISTS employees_list(
                     id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,

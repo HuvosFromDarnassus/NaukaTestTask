@@ -3,13 +3,13 @@
 <?php
 
 require_once("db.php"); // Скрипт подключения к базе данных
-require_once("component.php"); // скрипт генерации элемента HTML
+require_once("component.php"); // Скрипт генерации элемента HTML
 
 $con = Createdb(); // Функция подключения к БД в переменную $con
 
 // При нажатии кнопки "create"
 if (isset($_POST['create'])) {
-    createData(); // Вызов функции createDara
+    createData(); // Вызов функции createData
 }
 
 // При нажатии кнопки "update"
@@ -45,7 +45,7 @@ function createData() {
     // Формирование адресса
     $adress = 'г.' . $town . ' ' . 'ул. ' . $street . ' ' . $house . ' кв.' . $apartment;
 
-    // Если чекбокс "удаленки" отмечен, то $isRemoteWork = 1, иначе $isRemoteWork = 0
+    // Если чекбокс "удаленной работы" отмечен, то $isRemoteWork = 1, иначе $isRemoteWork = 0
     if(!empty($_POST)) {
         if(!empty($_POST['isRemoteWork'])) {
             $isRemoteWork = 1;
@@ -85,14 +85,14 @@ function search() {
     // Полученные данные в переменную $result
     $result = mysqli_query($GLOBALS['con'], $sql);
 
-    // Провекра на наличие данных
+    // Проверка на наличие данных
     if (mysqli_num_rows($result) > 0) {
         return $result;
     }
 
 }
 
-// calculateAge - ВЫЧИСЛАЕТ ВОЗРАСТ ПО ВВЕДЕННОЙ ДАТЕ РОЖДЕНИЯ
+// calculateAge - ВЫЧИСЛЯЕТ ВОЗРАСТ ПО ВВЕДЕННОЙ ДАТЕ РОЖДЕНИЯ
 function calculateAge($birthDate) {
     $date = new DateTime($birthDate);
     $now = new DateTime();
@@ -153,7 +153,7 @@ function updateData() {
     // Формирование адресса
     $adress = 'г.' . $town . ' ' . 'ул. ' . $street . ' ' . $house . ' кв.' . $apartment;
 
-    // Если чекбокс "удаленки" отмечен, то $isRemoteWork = 1, иначе $isRemoteWork = 0
+    // Если чекбокс "удаленной работы" отмечен, то $isRemoteWork = 1, иначе $isRemoteWork = 0
     if(!empty($_POST)) {
         if(!empty($_POST['isRemoteWork'])) {
             $isRemoteWork = 1;
@@ -212,7 +212,7 @@ function deleteBtn() {
     }
 }
 
-// deleteAll - Удаляет таблицу с данными, пересоздает такуюже с тем же названием
+// deleteAll - Удаляет таблицу с данными, пересоздает такую же с тем же названием
 function deleteAll() {
     $sql = "DROP TABLE employees_list";
 

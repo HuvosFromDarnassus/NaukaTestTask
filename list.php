@@ -2,7 +2,7 @@
 <?php 
 
 // ИМПОРТ СКРИПТОВ
-require_once("../EmployeesPrototype/php/operation.php"); // скрипт основных операция: добавдения, чтения, обновления, удаления.И вспомогательных функция
+require_once("../EmployeesPrototype/php/operation.php"); // Скрипт основных операций: добавления, чтения, обновления, удаления.И вспомогательных функций
 ?>
 
 <!DOCTYPE html>
