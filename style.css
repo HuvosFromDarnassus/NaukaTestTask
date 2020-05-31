@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  background-image: url("images/mainbg.png");
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.logo {
+  padding-top: 35px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.popup {
+  border-bottom: 10px rgba(255, 255, 255, 0.4) solid;
+}
+
+.photo_upload {
+  justify-self: flex-start;
+  width: 400px;
+  padding-left: 60px;
+}
+
+.input_table {
+  justify-self: flex-end;
+  width: 500px;
+}
+
+input {
+  cursor: text;
+  background-color: white;
+  color: #7f7f7f;
+  margin-left: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  width: 230px;
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+  color: #7f7f7f;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  width: 230px;
+}
+
+#output {
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px #33afe3 solid;
+}
+
+td img {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#file-selector {
+  cursor: pointer;
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  z-index: 999;
+  margin-left: -270px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.remote_work {
+  margin-left: -105px;
+  color: #fff;
+}
+
+.remote_work input {
+  margin-right: -100px;
+}
+
+.btns_form {
+  width: 780px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.btns_table {
+  width: 600px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.upd_btns {
+  width: 500px;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.read_btns {
+  margin-top: 16px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  margin-right: 35px;
+  border-radius: 3px;
+  background-color: #33afe3;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.btncreate:hover {
+  background-color: #5cb85c;
+}
+
+.totable:hover {
+  background-color: #32af9f;
+}
+
+.btnread:hover {
+  background-color: #428bca;
+}
+
+.btnupdate:hover {
+  background-color: #32af9f;
+}
+
+.btndelete {
+  background-color: crimson;
+  transition: 0.1s;
+}
+
+.btndelete:hover {
+  box-shadow: 0px 0px 5px crimson;
+}
+
+a {
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+tr {
+  transition: 0.2s ease;
+}
+
+tr:hover {
+  background-color: rgba(41, 171, 226, 0.4);
+}
+
+table {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  height: 25px;
+  cursor: pointer;
+}
+
+.success {
+  background-color: greenyellow;
+  padding: 1em;
+}
+
+.error {
+  background-color: lightcoral;
+  padding: 1em;
+}
+
+.btnedit {
+  font-weight: bold;
+  cursor: pointer;
+  color: coral;
+  background-color: transparent;
+}
+
+.search_btn {
+  cursor: pointer;
+  width: 70px;
+  transition: 0.1s;
+}
+
+.search_btn:hover {
+  color: #fff;
+  background-color: #33afe3;
+}
+
+.search {
+  width: 250px;
+}
+
+.btndeleteall {
+  background-color: crimson;
+  transition: 0.1s;
+}
+
+.btndeleteall:hover {
+  box-shadow: 0px 0px 5px crimson;
+}
+
+.columnSelector:hover {
+  border-right: 2px solid #33afe3;
+}
+
+.check {
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
