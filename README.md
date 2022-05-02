@@ -1,2 +1,2 @@
-# NaukaTestTask
-Daniil Tvorun - Test task from www.ntik.ru
+# 🛠 NaukaTestTask
+Test task project from www.ntik.ru
